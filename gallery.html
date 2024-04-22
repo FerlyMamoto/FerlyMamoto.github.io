@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>My Website</title>
+    </head>
 <head>
-    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <link href="style2.css" rel="stylesheet">
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </div>
-    <h1>Welcome to My Homepage!</h1>
-</header>
-<header>
-    <h1>Gallery</h1>
-</header>
-<main>
-    <h2>Here are some of my favorite photos:</h2>
-    <ul>
-        <li>
-             <p>This is my personal photos.</p>
-             <img src="Ferly1.jpeg" width="200" height="200">
-             <img src="Ferly2.jpeg" width="200" height="200">
-             <img src="Ferly3.jpeg" width="200" height="200" >
-        </li>
-        
-    </ul>
-</main>
-<footer>
-    <p>Copyright &copy; Ferly 2024</p>
-</footer>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><button id="dark-mode-toggle">Dark mode</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Here are some of my favorite photos:</h2>
+        <ul>
+            <li>
+                 <img src="Ferly1.jpeg" width="200" height="200">
+                 <img src="Ferly2.jpeg" width="200" height="200">
+                 <img src="Ferly3.jpeg" width="200" height="200" >
+            </li>
+        </ul>
+    </main>
+
+    <script>
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        toggleButton.addEventListener('click', () => {
+          document.body.classList.toggle('dark-mode');
+          toggleButton.textContent = document.body.classList.contains('dark-mode') ? 'Light mode' : 'Dark mode';
+        });
+      </script>
+
 </body>
+</html>
