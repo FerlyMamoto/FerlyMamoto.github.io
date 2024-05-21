@@ -17,6 +17,7 @@
                 <li><button id="dark-mode-toggle">Dark mode</button></li>
             </ul>
         </nav>
+        <script src="script.js"></script>
     </header>
     <main>
         <h2>Contact Person</h2>
@@ -25,14 +26,6 @@
         <p>EMAIL        : FERLYMAMOTO026@STUDENT.UNSRAT.AC.ID</a></p>
         <p>ALAMAT       : KUMELEMBUAI </a></p>
     </main>
-
-    <script>
-        const toggleButton = document.getElementById('dark-mode-toggle');
-        toggleButton.addEventListener('click', () => {
-          document.body.classList.toggle('dark-mode');
-          toggleButton.textContent = document.body.classList.contains('dark-mode') ? 'Light mode' : 'Dark mode';
-        });
-      </script>
 
 </body>
 </html>
