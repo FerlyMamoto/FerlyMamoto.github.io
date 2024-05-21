@@ -17,18 +17,11 @@
                 <li><button id="dark-mode-toggle">Dark mode</button></li>
             </ul>
         </nav>
+        <script src="script.js"></script>
     </header>
     <section id="home">
-        <h1>Welcome to my website!</h1>
+        <h2>Welcome to my website!</h2>
     </section>
-
-    <script>
-        const toggleButton = document.getElementById('dark-mode-toggle');
-        toggleButton.addEventListener('click', () => {
-          document.body.classList.toggle('dark-mode');
-          toggleButton.textContent = document.body.classList.contains('dark-mode') ? 'Light mode' : 'Dark mode';
-        });
-      </script>
 
 </body>
 </html>
